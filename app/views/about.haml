@@ -1,0 +1,27 @@
+.container
+  %h1 
+    About
+  .jumbotron
+    %h2.subtext
+      How to get/run/whatever?
+    .highlight
+      %pre.code
+        :preserve
+          $ git clone https://github.com/finger-berlin/example-sinatra-twitter-bootstrap-unicorn-app your-project-folder
+          $ cd your-project-folder
+      If you wan't to start your own git repo from this:
+      %pre
+        :preserve
+          $ rm -rf .git
+          $ git init
+          $ git add .
+          $ git commit -am "first commit"
+      Before running the app
+      %pre
+        :preserve
+          $ bundle install
+      And finally firing up the unicorn
+      %pre
+        :preserve
+          $ bundle exec unicorn -c config/unicorn.rb
+      That's it.
